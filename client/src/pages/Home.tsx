@@ -29,7 +29,7 @@ export default function Home() {
         <ServicesSection />
         <AboutSection />
         <TechnologiesSection />
-        <PortfolioSection />
+        {/* <PortfolioSection /> */}
         <TestimonialsSection />
         <ClientsSection />
         <CTASection />
