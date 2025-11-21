@@ -5,7 +5,7 @@
     "contact": "Contact"
   },
   "header": {
-    "getStarted": "Get Started",
+    "getStarted": "Start",
     "slogan": "Innovate. Build. Transform.",
     "topBar": {
       "phone": "+20 109 368 5307",
@@ -302,6 +302,60 @@
     "project6": {
       "title": "NFT Marketplace",
       "description": "Full-featured NFT marketplace with minting, trading, and royalty management on multiple blockchains"
+    }
+  },
+  "tradingExperts": {
+    "badge": "AI-POWERED TRADING AUTOMATION",
+    "title": "Expert Advisors & Custom Indicators for Forex",
+    "description": "Harness the power of AI and algorithmic trading with our custom MQL4/MQL5 Expert Advisors and indicators. Built for MetaTrader 4 & 5, our solutions help traders automate strategies, minimize emotional decisions, and maximize profitability in the Forex market.",
+    "features": {
+      "expertAdvisors": {
+        "title": "Expert Advisors (EA)",
+        "description": "Fully automated trading robots that execute strategies 24/7 on MetaTrader 4/5. Custom-built to your trading style with advanced risk management and multi-timeframe analysis."
+      },
+      "customIndicators": {
+        "title": "Custom Indicators",
+        "description": "Technical indicators tailored to your strategy. From trend detection to volatility analysis, we build indicators that provide real-time market insights and signals."
+      },
+      "automatedStrategies": {
+        "title": "Automated Strategies",
+        "description": "Transform your manual trading strategies into fully automated systems. Backtest, optimize, and deploy strategies with precision and speed."
+      },
+      "aiPowered": {
+        "title": "AI-Powered Analysis",
+        "description": "Integrate machine learning and artificial intelligence into your trading systems. Predictive models that adapt to market conditions and improve over time."
+      },
+      "realtime": {
+        "title": "Real-Time Execution",
+        "description": "Lightning-fast order execution with minimal latency. Our EAs are optimized for speed and reliability, ensuring you never miss a trading opportunity."
+      },
+      "riskManagement": {
+        "title": "Risk Management",
+        "description": "Built-in position sizing, stop-loss, take-profit, and drawdown controls. Protect your capital with intelligent risk management systems."
+      }
+    },
+    "importance": {
+      "title": "Why Trading Automation is Essential",
+      "consistency": {
+        "title": "Consistent Execution",
+        "description": "Eliminate human error and inconsistency. Automated systems follow your strategy precisely, every time, without deviation."
+      },
+      "emotionless": {
+        "title": "Emotion-Free Trading",
+        "description": "Remove fear, greed, and hesitation from your trading. Let algorithms execute based on logic and data, not emotions."
+      },
+      "backtesting": {
+        "title": "Historical Backtesting",
+        "description": "Test your strategies against years of historical data before risking real capital. Optimize and refine with confidence."
+      },
+      "speed": {
+        "title": "24/7 Market Monitoring",
+        "description": "Never miss an opportunity. Expert Advisors monitor markets round the clock, executing trades even while you sleep."
+      }
+    },
+    "cta": {
+      "title": "Ready to Automate Your Trading?",
+      "description": "Get a custom Expert Advisor or indicator built specifically for your trading strategy and goals."
     }
   },
   "common": {

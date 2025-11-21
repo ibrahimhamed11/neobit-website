@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import StatisticsSection from "@/components/StatisticsSection";
 import ServicesSection from "@/components/ServicesSection";
+import TradingExpertsSection from "@/components/TradingExpertsSection";
 import AboutSection from "@/components/AboutSection";
 import TechnologiesSection from "@/components/TechnologiesSection";
 import PortfolioSection from "@/components/PortfolioSection";
@@ -27,6 +28,7 @@ export default function Home() {
         <HeroSection />
         <StatisticsSection />
         <ServicesSection />
+        <TradingExpertsSection />
         <AboutSection />
         <TechnologiesSection />
         {/* <PortfolioSection /> */}

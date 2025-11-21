@@ -1,7 +1,8 @@
 import { ThemeOptions } from "@mui/material/styles";
 
 export const typography: ThemeOptions['typography'] = {
-  fontFamily: '"Droid Sans", "Roboto", "Helvetica", "Arial", sans-serif',
+  // Unified font family per request: use only Droid Sans with system sans fallback.
+  fontFamily: '"Droid Sans", sans-serif',
   h1: {
     fontSize: "3.5rem",
     fontWeight: 700,

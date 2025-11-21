@@ -116,11 +116,11 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
-    font-family: 'Droid Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Droid Sans', sans-serif;
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Droid Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Droid Sans', sans-serif;
   }
   
   /* RTL Support */
