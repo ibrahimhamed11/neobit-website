@@ -1,0 +1,314 @@
+{
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "header": {
+    "getStarted": "Get Started",
+    "slogan": "Innovate. Build. Transform.",
+    "topBar": {
+      "phone": "+20 109 368 5307",
+      "email": "info@neobit-it.com",
+      "emailSupport": "support@neobit-it.com",
+      "emailSales": "sales@neobit-it.com",
+      "available": "Available 24/7"
+    }
+  },
+  "hero": {
+    "kicker": "Welcome to NeoBit - Leading FinTech Innovators",
+    "trusted": "Trusted by 20+ Clients",
+    "title": "Professional & Innovative Software Solutions for the Digital Future",
+    "description": "NeoBit is a leading technology company delivering advanced solutions specialized in financial trading and blockchain programming. We develop sophisticated MQL4/5 trading robots, modern mobile applications, and professional websites. With our team of expert developers and professionals, we provide cutting-edge technologies and best practices to ensure secure, scalable solutions that meet global market demands.",
+    "getStarted": "Start Your Project",
+    "learnMore": "Explore Our Services",
+    "happyClients": "Happy Clients",
+    "successRate": "Success Rate",
+    "support": "Support"
+  },
+  "about": {
+    "title": "About NeoBit",
+    "description": "NeoBit is a professional programming company dedicated to delivering innovative solutions in trading financial systems, blockchain technology, and software development. We combine technical expertise with business acumen to create solutions that drive real value.",
+    "expertTeam": {
+      "title": "Expert Team",
+      "description": "Experienced developers and traders with deep expertise in financial markets, blockchain, and software development."
+    },
+    "missionDriven": {
+      "title": "Mission Driven",
+      "description": "Committed to delivering high-quality solutions that drive business growth and innovation in the fintech space."
+    },
+    "cuttingEdge": {
+      "title": "Cutting Edge",
+      "description": "Using the latest technologies and best practices to build scalable, secure, and performant solutions."
+    },
+    "crafted": {
+      "title": "Handcrafted Code with Passion",
+      "description": "Every line of code we write is carefully crafted with attention to detail, performance, and scalability. We don't just code - we engineer solutions that stand the test of time.",
+      "precision": {
+        "title": "Precision Engineering",
+        "description": "Meticulous attention to detail in every aspect of development"
+      },
+      "speed": {
+        "title": "Lightning Fast",
+        "description": "Optimized for performance without compromising quality"
+      },
+      "innovation": {
+        "title": "Innovative Solutions",
+        "description": "Creative approaches to solve complex problems"
+      }
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Comprehensive solutions for trading, blockchain, and software development",
+    "tradingSolutions": {
+      "title": "Trading Financial Solutions",
+      "description": "Build advanced trading platforms with algorithmic trading strategies, real-time market data integration, risk management systems, and automated execution engines. Our solutions support multiple asset classes including Forex, stocks, cryptocurrencies, and derivatives with advanced charting and analytics."
+    },
+    "blockchain": {
+      "title": "Blockchain Programming",
+      "description": "Develop secure smart contracts on Ethereum, Solana, and other platforms. Create DeFi protocols, NFT marketplaces, tokenization systems, and decentralized applications. Full blockchain infrastructure setup including node deployment, wallet integration, and Web3 connectivity with comprehensive security audits."
+    },
+    "mqlBots": {
+      "title": "MQL4/5 Bots & Indicators",
+      "description": "Design and develop custom Expert Advisors (EAs) for MetaTrader 4/5 platforms with sophisticated trading strategies. Create custom indicators, automated trading systems, and backtesting frameworks. Optimize performance with risk management, position sizing, and multi-timeframe analysis capabilities."
+    },
+    "mobileApps": {
+      "title": "Mobile App Development",
+      "description": "Build native iOS and Android applications or cross-platform solutions using React Native and Flutter. Create fintech apps, trading platforms, blockchain wallets, and enterprise mobile solutions. Features include real-time data sync, push notifications, biometric authentication, and offline functionality with beautiful UI/UX design."
+    },
+    "webDevelopment": {
+      "title": "Web Development",
+      "description": "Develop full-stack web applications using modern frameworks like React, Next.js, Node.js, and TypeScript. Create responsive progressive web apps (PWAs), dashboards, admin panels, and SaaS platforms. Implement RESTful APIs, GraphQL, microservices architecture, and real-time features with WebSockets and cloud deployment."
+    },
+    "customSolutions": {
+      "title": "Custom Solutions",
+      "description": "Design bespoke software solutions tailored to your unique business needs. From API integrations and data migration to complex enterprise systems and automation tools. We analyze your requirements, architect scalable solutions, and deliver robust applications with ongoing support and maintenance."
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Have a project in mind? We'd love to hear from you. Contact us today to discuss your requirements.",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "globalOperations": "Global Operations",
+    "responseTime": "We typically respond within 24 hours",
+    "badge": "Get in Touch",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "success": "Thank you for your message! We'll get back to you soon.",
+      "validation": {
+        "nameRequired": "Name is required",
+        "nameMin": "Name must be at least 2 characters",
+        "nameMax": "Name must be less than 50 characters",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "subjectRequired": "Subject is required",
+        "subjectMin": "Subject must be at least 3 characters",
+        "subjectMax": "Subject must be less than 100 characters",
+        "messageRequired": "Message is required",
+        "messageMin": "Message must be at least 10 characters",
+        "messageMax": "Message must be less than 500 characters"
+      }
+    }
+  },
+  "process": {
+    "title": "Software Development Process",
+    "description": "We follow a structured and professional methodology to ensure high-quality software solutions that meet your requirements and achieve your goals",
+    "requirements": "Requirements",
+    "requirementsDesc": "Gathering needs",
+    "study": "Project Study",
+    "studyDesc": "Detailed study",
+    "analysis": "Analysis",
+    "analysisDesc": "Comprehensive analysis",
+    "design": "Design",
+    "designDesc": "Planning & Design",
+    "development": "Development & Delivery",
+    "developmentDesc": "Coding & Launch"
+  },
+  "footer": {
+    "description": "Professional programming solutions for trading, blockchain, and software development. Launching January 1st, 2026.",
+    "tagline": "Building the Future of Digital Solutions",
+    "services": "Services",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "newsletter": "Newsletter",
+    "newsletterText": "Subscribe to our newsletter for updates and insights",
+    "emailPlaceholder": "Your email address",
+    "subscribe": "Subscribe",
+    "validation": {
+      "newsletterEmailRequired": "Email is required for subscription",
+      "newsletterEmailInvalid": "Please enter a valid email address"
+    },
+    "tradingSolutions": "Trading Solutions",
+    "blockchainDev": "Blockchain Dev",
+    "mqlBots": "MQL4/5 Bots",
+    "mobileApps": "Mobile Apps",
+    "webDev": "Web Development",
+    "customSolutions": "Custom Solutions",
+    "about": "About Us",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "careers": "Careers",
+    "blog": "Blog",
+    "support": "Support",
+    "rightsReserved": "All rights reserved",
+    "madeWith": "Made with",
+    "location": "Dubai, UAE & Global"
+  },
+  "countdown": {
+    "title": "Launching January 1st, 2026",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
+  },
+  "stats": {
+    "title": "Our Track Record",
+    "description": "Numbers that speak for themselves - proven excellence in software development",
+    "clients": "Satisfied Clients",
+    "projects": "Completed Projects",
+    "linesOfCode": "Lines of Code",
+    "satisfaction": "Client Satisfaction",
+    "support": "Available Support",
+    "experience": "Years Experience"
+  },
+  "technologies": {
+    "title": "Technologies We Master",
+    "description": "Cutting-edge tools and frameworks powering next-generation solutions",
+    "alwaysLearning": "🚀 Always Learning, Always Innovating",
+    "learningDescription": "We stay ahead of the curve by continuously adopting new technologies and best practices to deliver state-of-the-art solutions."
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "description": "Real feedback from real clients who trusted us with their projects",
+    "client1": {
+      "name": "Ahmed Al-Mansouri",
+      "role": "CEO & Founder",
+      "content": "NeoBit transformed our trading platform with their exceptional MQL5 bot development. The results exceeded our expectations, and their professionalism is unmatched."
+    },
+    "client2": {
+      "name": "Michael Chen",
+      "role": "Tech Lead",
+      "content": "Outstanding blockchain development expertise. They delivered our DeFi protocol on time with robust smart contracts and comprehensive security audits."
+    },
+    "client3": {
+      "name": "Sara Johnson",
+      "role": "Product Manager",
+      "content": "The mobile app they built for us is exceptional - beautiful UI, smooth performance, and flawless integration with our backend systems."
+    },
+    "joinTitle": "Ready to Start Your Project?",
+    "joinDescription": "Join our growing list of satisfied clients and let us bring your vision to life with cutting-edge technology."
+  },
+  "cta": {
+    "badge": "Limited Spots Available",
+    "title": "Ready to Transform Your Vision Into Reality?",
+    "description": "Join innovative companies worldwide that trust NeoBit to build their next-generation software solutions. Let's create something extraordinary together.",
+    "primaryButton": "Start Your Project",
+    "secondaryButton": "View Our Work",
+    "quickResponse": "24-Hour Response",
+    "securePayment": "Secure & Trusted",
+    "noCommitment": "Free Consultation"
+  },
+  "partners": {
+    "title": "Trusted By Industry Leaders",
+    "description": "We collaborate with top technology platforms and frameworks to deliver world-class solutions"
+  },
+  "portfolio": {
+    "title": "Our Work",
+    "description": "Explore our portfolio of successful projects delivered to clients worldwide",
+    "viewDetails": "View Details",
+    "viewAllProjects": "View All Projects",
+    "screenshots": "Project Screenshots",
+    "aboutProject": "About This Project",
+    "keyFeatures": "Key Features",
+    "projectInfo": "Project Information",
+    "year": "Year",
+    "client": "Client",
+    "technologies": "Technologies Used",
+    "visitWebsite": "Visit Website",
+    "downloadAndroid": "Download on Android",
+    "iosComingSoon": "iOS Coming Soon",
+    "marketWhales": {
+      "name": "Market Whales",
+      "description": "Advanced trading platform with real-time market data and social trading features",
+      "longDescription": "Market Whales is a comprehensive trading platform that combines real-time market data, advanced charting tools, and social trading features. Built with cutting-edge technologies, it provides traders with everything they need to make informed decisions and connect with other traders worldwide.",
+      "category": "Trading Platform",
+      "features": {
+        "feature1": "Real-time market data",
+        "feature2": "Advanced trading signals",
+        "feature3": "Portfolio tracking",
+        "feature4": "Social trading community",
+        "feature5": "Custom alerts",
+        "feature6": "Multi-language support"
+      }
+    },
+    "cryptoExchange": {
+      "name": "Crypto Exchange",
+      "description": "Decentralized cryptocurrency exchange with advanced DeFi features",
+      "longDescription": "A fully decentralized cryptocurrency exchange built on blockchain technology. Features include decentralized trading, liquidity pools, staking mechanisms, and advanced DeFi protocols with top-tier security and transparency.",
+      "category": "Blockchain",
+      "features": {
+        "feature1": "Decentralized trading",
+        "feature2": "Smart contract integration",
+        "feature3": "Wallet connectivity",
+        "feature4": "Liquidity pools"
+      }
+    },
+    "tradingBot": {
+      "name": "AI Trading Bot",
+      "description": "Intelligent automated trading system with AI-powered predictions",
+      "longDescription": "An advanced trading bot that uses artificial intelligence and machine learning to analyze market patterns and execute trades automatically. Features sophisticated risk management, backtesting capabilities, and customizable trading strategies.",
+      "category": "Automation",
+      "features": {
+        "feature1": "Automated trading strategies",
+        "feature2": "AI-powered predictions",
+        "feature3": "Risk management",
+        "feature4": "Backtesting framework"
+      }
+    },
+    "viewAll": "🚀 And many more exciting projects in development",
+    "category": {
+      "trading": "Trading Platform",
+      "blockchain": "Blockchain",
+      "mobile": "Mobile App",
+      "web": "Web Application"
+    },
+    "project1": {
+      "title": "AI Trading Bot",
+      "description": "Advanced algorithmic trading system with machine learning capabilities for Forex and cryptocurrency markets"
+    },
+    "project2": {
+      "title": "DeFi Protocol",
+      "description": "Decentralized finance platform with yield farming, staking, and liquidity pool features on Ethereum"
+    },
+    "project3": {
+      "title": "FinTech Mobile App",
+      "description": "Cross-platform financial management app with real-time market data and portfolio tracking"
+    },
+    "project4": {
+      "title": "Trading Dashboard",
+      "description": "Real-time analytics dashboard with advanced charting, risk management, and automated alerts"
+    },
+    "project5": {
+      "title": "Strategy Backtester",
+      "description": "Professional backtesting platform for trading strategies with historical data and performance metrics"
+    },
+    "project6": {
+      "title": "NFT Marketplace",
+      "description": "Full-featured NFT marketplace with minting, trading, and royalty management on multiple blockchains"
+    }
+  },
+  "common": {
+    "backToHome": "Back to Home"
+  },
+  "whatsapp": {
+    "tooltip": "Chat with us on WhatsApp",
+    "message": "Hello! I'm interested in your services."
+  }
+}
