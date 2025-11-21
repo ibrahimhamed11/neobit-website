@@ -214,7 +214,10 @@ export default function TechnologiesSection() {
                   <Box
                     sx={{
                       display: "grid",
-                      gridTemplateColumns: "repeat(auto-fill, minmax(70px, 1fr))",
+                      gridTemplateColumns: {
+                        xs: "repeat(auto-fill, minmax(65px, 1fr))",
+                        sm: "repeat(auto-fill, minmax(70px, 1fr))",
+                      },
                       gap: 1,
                     }}
                   >
@@ -272,12 +275,12 @@ export default function TechnologiesSection() {
                               transition: "all 0.3s ease",
                               cursor: "pointer",
                               aspectRatio: "1",
-                              minHeight: "70px",
+                              minHeight: { xs: "65px", sm: "70px" },
                               "&:hover": {
                                 background: `linear-gradient(135deg, ${tech.color}20 0%, ${tech.color}10 100%)`,
                                 borderColor: `${tech.color}60`,
                                 boxShadow: `0 4px 16px ${tech.color}30`,
-                                "& img": {
+                                "& img, & > div > img": {
                                   transform: "scale(1.15)",
                                 },
                               },
@@ -285,20 +288,37 @@ export default function TechnologiesSection() {
                           >
                             {/* Technology Logo */}
                             <Box
-                              component="img"
-                              src={tech.logo}
-                              alt={tech.name}
-                              onError={(e: any) => {
-                                e.target.style.display = 'none';
-                              }}
                               sx={{
-                                width: 24,
-                                height: 24,
-                                objectFit: "contain",
-                                transition: "transform 0.3s ease",
-                                filter: "drop-shadow(0 2px 6px rgba(0, 229, 255, 0.2))",
+                                width: { xs: 20, sm: 24 },
+                                height: { xs: 20, sm: 24 },
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                position: "relative",
                               }}
-                            />
+                            >
+                              <Box
+                                component="img"
+                                src={tech.logo}
+                                alt={tech.name}
+                                loading="lazy"
+                                onError={(e: any) => {
+                                  const target = e.target as HTMLImageElement;
+                                  target.style.display = 'none';
+                                  const parent = target.parentElement;
+                                  if (parent) {
+                                    parent.innerHTML = `<div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: ${tech.color}30; border-radius: 4px; font-size: 10px; font-weight: 700; color: ${tech.color};">${tech.name.substring(0, 2).toUpperCase()}</div>`;
+                                  }
+                                }}
+                                sx={{
+                                  width: "100%",
+                                  height: "100%",
+                                  objectFit: "contain",
+                                  transition: "transform 0.3s ease",
+                                  filter: "drop-shadow(0 2px 6px rgba(0, 229, 255, 0.2))",
+                                }}
+                              />
+                            </Box>
                             {/* Technology Name */}
                             <Typography
                               sx={{

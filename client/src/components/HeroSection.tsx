@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Button, Chip } from "@mui/material";
+import { Box, Container, Typography, Button, Chip, useMediaQuery, useTheme } from "@mui/material";
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles, Rocket, Star } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -6,6 +6,8 @@ import { useState, useEffect } from "react";
 
 export default function HeroSection() {
   const { t } = useTranslation();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const [titleText, setTitleText] = useState("");
   const [descText, setDescText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
@@ -14,6 +16,14 @@ export default function HeroSection() {
   const fullDesc = t("hero.description");
   
   useEffect(() => {
+    // Skip typing animation on mobile for better performance
+    if (isMobile) {
+      setTitleText(fullTitle);
+      setDescText(fullDesc);
+      setShowCursor(false);
+      return;
+    }
+
     let titleIndex = 0;
     let descIndex = 0;
     
@@ -46,7 +56,7 @@ export default function HeroSection() {
       clearInterval(titleTimer);
       clearInterval(cursorTimer);
     };
-  }, [fullTitle, fullDesc]);
+  }, [fullTitle, fullDesc, isMobile]);
   
   return (
     <Box
@@ -61,14 +71,15 @@ export default function HeroSection() {
         paddingBottom: { xs: "60px", sm: "80px", md: "120px" },
       }}
     >
-      {/* Animated background elements */}
+      {/* Animated background elements - Disabled on mobile for performance */}
       <Box
         sx={{
+          display: { xs: "none", md: "block" },
           position: "absolute",
           top: "10%",
           right: "5%",
-          width: { xs: "250px", sm: "350px", md: "400px" },
-          height: { xs: "250px", sm: "350px", md: "400px" },
+          width: { md: "400px" },
+          height: { md: "400px" },
           background: "radial-gradient(circle, rgba(0, 229, 255, 0.15) 0%, transparent 70%)",
           borderRadius: "50%",
           animation: "float 6s ease-in-out infinite",
@@ -80,11 +91,12 @@ export default function HeroSection() {
       />
       <Box
         sx={{
+          display: { xs: "none", md: "block" },
           position: "absolute",
           bottom: "10%",
           left: "5%",
-          width: { xs: "200px", sm: "250px", md: "300px" },
-          height: { xs: "200px", sm: "250px", md: "300px" },
+          width: { md: "300px" },
+          height: { md: "300px" },
           background: "radial-gradient(circle, rgba(0, 229, 255, 0.1) 0%, transparent 70%)",
           borderRadius: "50%",
           animation: "float 8s ease-in-out infinite",
@@ -109,6 +121,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
+            style={{ willChange: "auto" }}
           >
             <Box>
               <motion.div
@@ -256,11 +269,19 @@ export default function HeroSection() {
                 </Typography>
               </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 1.2 }}
-                style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "8px" }}
+              <Box
+                sx={{
+                  display: "flex",
+                  gap: "12px",
+                  flexWrap: "nowrap",
+                  marginTop: "8px",
+                  overflowX: { xs: "auto", sm: "visible" },
+                  scrollbarWidth: "none",
+                  msOverflowStyle: "none",
+                  "&::-webkit-scrollbar": {
+                    display: "none",
+                  },
+                }}
               >
                 <motion.div
                   whileHover={{ scale: 1.08, y: -3 }}
@@ -275,17 +296,18 @@ export default function HeroSection() {
                     sx={{
                       background: "linear-gradient(135deg, #00F5FF 0%, #00B8D4 100%)",
                       color: "#0a0a0a",
-                      padding: { xs: "12px 28px", sm: "13px 32px" },
-                      fontSize: { xs: "0.9rem", sm: "0.95rem" },
+                      padding: { xs: "10px 20px", sm: "13px 32px" },
+                      fontSize: { xs: "0.85rem", sm: "0.95rem" },
                       fontWeight: 600,
                       borderRadius: "30px",
                       textTransform: "none",
                       display: "flex",
                       alignItems: "center",
-                      gap: "8px",
+                      gap: "6px",
                       fontFamily: "Droid Sans, sans-serif",
                       position: "relative",
                       overflow: "hidden",
+                      whiteSpace: "nowrap",
                       boxShadow: "0 4px 20px rgba(0, 245, 255, 0.35), 0 0 40px rgba(0, 245, 255, 0.2)",
                       border: "1px solid rgba(255, 255, 255, 0.2)",
                       "&::before": {
@@ -309,9 +331,9 @@ export default function HeroSection() {
                       transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
                     }}
                   >
-                    <Rocket size={18} />
+                    <Rocket size={16} />
                     {t("hero.getStarted")}
-                    <ArrowRight size={18} />
+                    <ArrowRight size={16} />
                   </Button>
                 </motion.div>
                 
@@ -329,11 +351,12 @@ export default function HeroSection() {
                       color: "#00F5FF",
                       borderColor: "rgba(0, 245, 255, 0.5)",
                       borderWidth: "1.5px",
-                      padding: { xs: "12px 28px", sm: "13px 32px" },
-                      fontSize: { xs: "0.9rem", sm: "0.95rem" },
+                      padding: { xs: "10px 20px", sm: "13px 32px" },
+                      fontSize: { xs: "0.85rem", sm: "0.95rem" },
                       fontWeight: 600,
                       borderRadius: "30px",
                       textTransform: "none",
+                      whiteSpace: "nowrap",
                       fontFamily: "Droid Sans, sans-serif",
                       position: "relative",
                       overflow: "hidden",
@@ -365,7 +388,7 @@ export default function HeroSection() {
                     {t("hero.learnMore")}
                   </Button>
                 </motion.div>
-              </motion.div>
+              </Box>
               
               {/* Trust indicators */}
               <motion.div
